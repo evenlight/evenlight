@@ -1,6 +1,0 @@
-===============================
-20:30:23
-===============================
-Access denied for user ''@'localhost' (using password: NO)
-
-

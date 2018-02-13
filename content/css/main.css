@@ -1,0 +1,410 @@
+/*
+======================
+		BASE
+======================
+*/
+body
+{
+	overflow : hidden;
+}
+
+a
+{
+	text-decoration : none;
+}
+
+/*
+======================
+		HEADER
+======================
+*/
+.global_header
+{
+}
+
+.logo
+{
+	margin : 43px 0 0 60px;
+}
+
+.logo a
+{
+	font  : 20px 'PT Sans', sans-serif;
+	color : #FFF;
+}
+
+.logo a img
+{
+	width  : 150px;
+	height : 170px;
+}
+
+.navbar
+{
+	margin        : 25px 0 0;
+	padding       : 19px 29px;
+	border-radius : 2px;
+	background    : rgba(255, 255, 255, .06);
+}
+
+.navbar a
+{
+	margin : 0 83px 0 0;
+	font   : 18px 'PT Sans', sans-serif;
+	color  : #FFF;
+}
+
+.navbar a:last-child
+{
+	margin : 0;
+}
+
+/*
+======================
+		FOOTER
+======================
+*/
+.global_footer
+{
+	position : fixed;
+	bottom   : 0;
+	left     : 0;
+	width    : 100%;
+}
+
+/*
+======================
+		OPTIONAL
+======================
+*/
+.put_left
+{
+	float : left !important;
+}
+
+.put_right
+{
+	float : right !important;
+}
+
+.put_center
+{
+	display      : block;
+	margin-left  : auto !important;
+	margin-right : auto !important;
+}
+
+.clr:after,
+.clr:before
+{
+	content : " ";
+	display : table;
+	clear   : both;
+}
+
+/*
+======================
+		UFO's
+======================
+*/
+.ufo
+{
+	position : relative;
+}
+
+.ufo > div
+{
+	position : absolute;
+	display  : inline-block;
+	cursor   : pointer;
+	z-index  : 1;
+}
+
+.ufo > div > img
+{
+	image-rendering        : pixelated;
+	-ms-interpolation-mode : nearest-neighbor;
+	image-rendering        : -webkit-optimize-contrast;
+	image-rendering        : -webkit-crisp-edges;
+	image-rendering        : -moz-crisp-edges;
+	image-rendering        : -o-crisp-edges;
+}
+
+.ufo > div:nth-child(1)
+{
+	top  : 400px;
+	left : -55px;
+}
+
+.ufo > div:nth-child(2)
+{
+	top  : 160px;
+	left : 5px;
+}
+
+.ufo > div:nth-child(3)
+{
+	top  : -65px;
+	left : -90px;
+}
+
+.ufo > div:nth-child(4)
+{
+	top   : 75px;
+	right : 195px;
+}
+
+.ufo > div:nth-child(5)
+{
+	top   : 10px;
+	right : -100px;
+}
+
+.ufo > div:nth-child(6)
+{
+	top   : -43px;
+	right : 365px;
+}
+
+.ufo > div:nth-child(7)
+{
+	top  : 300px;
+	left : 308px;
+}
+
+.ufo > div:nth-child(8)
+{
+	top   : 285px;
+	right : 0;
+}
+
+.ufo > div:nth-child(2) > img
+{
+	transform : scale(.8);
+}
+
+.ufo > div:nth-child(3) > img
+{
+	transform : scale(.6);
+}
+
+.ufo > div:nth-child(4) > img
+{
+	transform : scale(.7);
+}
+
+.ufo > div:nth-child(5) > img
+{
+	transform : scale(.5);
+}
+
+.ufo > div:nth-child(6) > img
+{
+	transform : scale(.7);
+}
+
+.ufo > div:nth-child(7) > img
+{
+	transform : scale(.3);
+}
+
+.ufo > div:nth-child(8) > img
+{
+	transform : scale(.6);
+}
+
+.ufo .info
+{
+	position      : absolute;
+	left          : 80px;
+	bottom        : -50px;
+	display       : none;
+	border-radius : 10px;
+	color         : #FFF;
+	background    : rgba(255, 255, 255, .2);
+	padding       : 20px 40px;
+}
+
+.ufo .info:before
+{
+	
+}
+
+/*
+======================
+		STARS
+======================
+*/
+#stars_wrapper
+{
+	position   : fixed;
+	top        : 0;
+	left       : 0;
+	width      : 100%;
+	height     : 100%;
+	background : #000;
+	background : -webkit-gradient(linear, left bottom, left top, color-stop(0%, #1B2735), color-stop(100%, #000));
+	background : radial-gradient(ellipse at bottom, #1B2735 0%, #000 100%);
+	z-index    : -1;
+}
+
+#stars
+{
+	position          : fixed;
+	width             : 400%; /*400vw*/
+	height            : 400%; /*400vh*/
+	top               : -150%; /*50%*/
+	left              : -150%; /*50%*/
+	/*margin-top      : -200vh; margin-left : -200vw;*/
+	-webkit-animation : _stars 340s linear infinite;
+	-o-animation      : _stars 340s linear infinite;
+	animation         : _stars 340s linear infinite;
+	background-size   : 240px 240px;
+	background-image  : url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==); /*data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==*/
+}
+
+#stars_nearbyMenu
+{
+	position   : absolute;
+	left       : 650px;
+	top        : 37px;
+	width      : 328px;
+	height     : 171px;
+	background : transparent url('../img/header_stars.png') no-repeat;
+}
+
+/*
+======================
+		SATELLITE
+======================
+*/
+.satellite
+{
+	position   : absolute;
+	top        : 30px;
+	right      : 370px;
+	width      : 143px;
+	height     : 137px;
+	background : transparent url('../img/satellite.png') no-repeat;
+	animation  : _satellite 45s linear infinite;
+}
+
+/*
+======================
+		PLANETS
+======================
+*/
+.pl_big
+{
+	position : relative;
+	width    : 1686px;
+	height   : 316px;
+}
+
+.pl_big:after
+{
+	content    : " ";
+	display    : block;
+	width      : 100%;
+	height     : 1686px;
+	background : transparent no-repeat top center;
+	animation  : _pl_big 400s linear infinite;
+}
+
+.pl_small
+{
+	position         : absolute;
+	left             : 30%;
+	bottom           : -200%;
+	width            : 850px;
+	height           : 64px;
+	background       : transparent url('../img/planets/pl_companion.png') no-repeat center right;
+	background-size  : 63px 64px;
+	animation        : _pl_small 200s linear infinite;
+	transform-origin : top left;
+	z-index          : -1;
+}
+
+.orange_skin:after
+{
+	background-image : url('../img/planets/orange.png');
+}
+
+/*
+======================
+		GRIDS
+======================
+*/
+.grid_700
+{
+	max-width : 700px;
+}
+
+/*
+======================
+		KEYFRAMES
+======================
+*/
+@-webkit-keyframes _stars
+{
+	0%
+	{
+		transform : rotate(0deg);
+	}
+	100%
+	{
+		transform : rotate(180deg);
+	}
+}
+
+@keyframes _stars
+{
+	from
+	{
+		transform : rotate(0deg);
+	}
+	to
+	{
+		transform : rotate(180deg);
+	}
+}
+
+@keyframes _pl_big
+{
+	from
+	{
+		transform : rotate(0deg);
+	}
+	to
+	{
+		transform : rotate(-360deg);
+	}
+}
+
+@keyframes _pl_small
+{
+	from
+	{
+		transform : rotate(215deg);
+	}
+	to
+	{
+		transform : rotate(315deg);
+	}
+}
+
+@keyframes _satellite
+{
+	0%
+	{
+		transform : translateY(-15%);
+	}
+	50%
+	{
+		transform : translateY(0%);
+	}
+	100%
+	{
+		transform : translateY(-15%);
+	}
+}
