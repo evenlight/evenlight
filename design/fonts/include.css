@@ -1,0 +1,13 @@
+/*
+======================
+		PT Sans
+======================
+*/
+@font-face
+{
+	font-family : 'PT Sans';
+	font-style  : normal;
+	font-weight : 400;
+	src         : local('PT Sans'), local('PTSans-Regular'),
+				  url('./PT_Sans/PT_Sans-Web-Regular.ttf') format('ttf');
+}

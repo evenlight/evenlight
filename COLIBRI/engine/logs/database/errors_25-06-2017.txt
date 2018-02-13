@@ -1,0 +1,24 @@
+===============================
+04:24:47
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+06:50:25
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+19:54:44
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+23:37:51
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+

@@ -1,0 +1,6 @@
+===============================
+06:18:03
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+

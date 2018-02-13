@@ -1,0 +1,22 @@
+DirectoryIndex /index.html
+RewriteEngine On
+
+#Фильтр URL
+RewriteCond %{QUERY_STRING} (<|>|"|%3C|%3E|%22) [NC]
+
+#Редирект с WWW
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+#Редирект с index.php
+RewriteCond %{REQUEST_URI} ^/index$ [OR]
+RewriteCond %{REQUEST_URI} ^/index[.]+(\w+)$
+RewriteRule . / [R=301,L]
+
+#Страницы ошибок
+ErrorDocument 401 /ErrorDocument/401.html
+ErrorDocument 403 /ErrorDocument/403.html
+ErrorDocument 404 /ErrorDocument/404.html
+ErrorDocument 500 /ErrorDocument/500.html
+
+#RewriteRule ^error=404$ /ErrorDocument/404.html [L]

@@ -1,0 +1,108 @@
+===============================
+08:52:55
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:47:33
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:52:35
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:53:28
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:53:35
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:54:02
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:54:06
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:54:57
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:56:07
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+22:56:41
+===============================
+Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+           22:59:13
+===============================
+          Access denied for user ''@'localhost' (using password: NO)
+
+
+===============================
+           23:02:17
+===============================
+          Access denied for user ''@'localhost' (using password: NO)
+
+
+    ===============================
+               23:26:26
+    ===============================
+    Unknown database 'stu_lieven_09'
+    
+    
+    ===============================
+               23:27:17
+    ===============================
+    Unknown database 'stu_lieven_09'
+    
+    
+    ===============================
+               23:27:37
+    ===============================
+    Unknown database 'stu_lieven_09'
+    
+    
+    ===============================
+               23:28:45
+    ===============================
+    Unknown database 'stu_lieven_09'
+    
+    
+    ===============================
+               23:28:52
+    ===============================
+    Unknown database 'stu_lieven_09'
+    
+    
+    ===============================
+               23:29:06
+    ===============================
+    Unknown database 'stu_lieven_09'
+    
+    
