@@ -2,7 +2,7 @@
 <header class="global_header clr">
 		<div class="logo put_left">
 			<a href="#main">
-				<img src="/content/img/logo/logo_dark.png" alt="">
+				<img src="content/img/logo/logo_dark.png" alt="">
 			</a>
 		</div>
 

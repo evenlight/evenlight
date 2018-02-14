@@ -9,8 +9,8 @@
 <!-- /FOOTER END -->
 
 <!-- JS Files -->
-	<script src="../content/js/jquery-3.2.1.min.js"></script>
-    <script src="../content/js/main.js"></script>
+	<script src="content/js/jquery-3.2.1.min.js"></script>
+    <script src="content/js/main.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {

@@ -31,10 +31,10 @@
 	<meta name="theme-color" content="#090c11" />
 	
 <!-- CSS Files -->
-	<link rel="stylesheet" href="../content/css/normalize.css" />
-    <link rel="stylesheet" href="../content/fonts/include.css" />
-    <link rel="stylesheet" href="../content/css/bootstrap-grid.css" />
-	<link rel="stylesheet" href="../content/css/main.css" />
+	<link rel="stylesheet" href="content/css/normalize.css" />
+    <link rel="stylesheet" href="content/fonts/include.css" />
+    <link rel="stylesheet" href="content/css/bootstrap-grid.css" />
+	<link rel="stylesheet" href="content/css/main.css" />
 </head>
 <?php
     require_once('canvas.php');
